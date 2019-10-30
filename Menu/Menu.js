@@ -23,6 +23,13 @@ function menuComponent(menuArr) {
 
     list.appendChild(listItem);
   })
+
+  // Add event listener to button
+  const menuButton = document.querySelector('.menu-button');
+
+  menuButton.addEventListener('click', () => {
+    menu.classList.toggle('menu--open');
+  })
 }
 
 menuComponent(menuItems);
