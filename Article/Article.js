@@ -144,11 +144,11 @@ function articleComponent({title, date, firstParagraph, secondParagraph, thirdPa
   articleP2.textContent = secondParagraph;
   articleP3.textContent = thirdParagraph;
   expandButton.textContent = 'Expand';
-  closeButton.textContent = 'Close';
+  closeButton.textContent = 'Done';
 
   // Add Event Listener to button
   expandButton.addEventListener('click', () => {
-    article.classList.toggle('article');
+    article.classList.toggle('article-open');
   })
 
   closeButton.addEventListener('click', (e) => {
