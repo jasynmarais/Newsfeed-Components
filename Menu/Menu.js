@@ -30,6 +30,12 @@ function menuComponent(menuArr) {
   menuButton.addEventListener('click', () => {
     menu.classList.toggle('menu--open');
   })
+
+  // Append components to DOM
+  menu.appendChild(list);
+  document.querySelector('.header').appendChild(menu);
+
+  return menu;
 }
 
 menuComponent(menuItems);
